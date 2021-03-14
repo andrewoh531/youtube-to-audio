@@ -2,5 +2,6 @@
 
 
 # TODO
-1. Check whether containerising is similar to Lambda layers
-1. Containerise it
+- [x] Create a nodeJS script to download the file from Youtube (might be able to just use it in lambda) 
+- [ ] Create a NodeJS script to prune the mp3 audio file 
+- [ ] If both the steps above are quick then could just create them as a lambda function

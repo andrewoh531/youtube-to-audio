@@ -18,7 +18,8 @@ DOWNLOADED_FILENAME="${TODAYS_DATE}-original.mp3"
 EDITED_FILENAME="${TODAYS_DATE}-pruned.mp3"
 
 echo "Downloading $1..."
-youtube-dl -i --no-mark-watched --extract-audio --audio-format mp3 --audio-quality 0 --output ${DOWNLOADED_FILENAME} $1
+#youtube-dl -i --no-mark-watched --extract-audio --audio-format mp3 --audio-quality 0 --output ${DOWNLOADED_FILENAME} $1
+./download-from-youtube.js --link=$1
 
 echo "Editing $1..."
 ffmpeg -ss $2 -to $3 -i "${DOWNLOADED_FILENAME}" -c:a libmp3lame "${EDITED_FILENAME}"
