@@ -1,5 +1,7 @@
 `./download-crop.sh <youtube-link> 00:38:44.00 01:26:47.00`
 
+To increase volume:
+`ffmpeg -i input.mp3 -filter:a "volume=3" output.mp3`
 
 # TODO
 - [x] Create a nodeJS script to download the file from Youtube (might be able to just use it in lambda) 
