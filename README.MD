@@ -1,3 +1,11 @@
+## Overview
+There are a few steps involved in the script:
+1. Download the Youtube video as an mp3 file
+2. Trim the front and end of the mp3
+3. Increase the volume if required
+
+## Running the scripts
+To download a Youtube link as audio and then prune it, run the script:
 `./download-crop.sh <youtube-link> 00:38:44.00 01:26:47.00`
 
 To increase volume:
@@ -7,3 +15,4 @@ To increase volume:
 - [x] Create a nodeJS script to download the file from Youtube (might be able to just use it in lambda) 
 - [ ] Create a NodeJS script to prune the mp3 audio file 
 - [ ] If both the steps above are quick then could just create them as a lambda function
+- [ ] 
