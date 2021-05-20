@@ -13,7 +13,6 @@ To increase volume:
 
 # TODO
 - [x] Create a nodeJS script to download the file from Youtube (might be able to just use it in lambda) 
-- [ ] Create a NodeJS script to prune the mp3 audio file 
-- [ ] If both the steps above are quick then could just create them as a lambda function
-- [ ] Create lambda for step 1 (downloading from youtube)
-      - May need to ensure the lambda has youtube-dl binary available on it
+- [x] Create a NodeJS script to trim the mp3 audio file 
+- [ ] Create lambda for the steps above
+
